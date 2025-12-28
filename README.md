@@ -14,65 +14,70 @@ A real-time Incident Management System for DevOps workflows. It allows administr
 ## 🚥 API Documentation
 
 ### 1. Setup Rotation
+
 - **Endpoint:** `POST /policy`
 - **Description:** Links a service name to an on-call engineer.
-- **Payload:**
-  ```json
-  {
-    "service": "Database-Cluster",
-    "name": "John Doe",
-    "email": "john.d@lenskart.com"
-  }
-  2. Trigger Incident
-Endpoint: POST /incident
-
-Description: Creates a new alert. Fails if no matching service policy exists.
-
-Payload:
-
-JSON
+- **Request Body:**
 
 {
-  "serviceName": "Database-Cluster",
-  "errorDetails": "Connection Timeout"
+"service": "Database-Cluster",
+"name": "John Doe",
+"email": "john.d@lenskart.com"
 }
-3. Fetch Dashboard
-Endpoint: GET /dashboard
 
-Description: Returns the current list of all incidents.
 
-Response Status: 200 OK
 
-4. Update Status (Ack/Resolve)
-Endpoints: POST /ack or POST /resolve
+### 2. Trigger Incident
 
-Description: Updates the status of an existing incident using its unique ID.
-
-Payload:
-
-JSON
+- **Endpoint:** `POST /incident`
+- **Description:** Creates a new alert. Fails if no matching service policy exists.
+- **Request Body:**
 
 {
-  "id": "unique-incident-uuid"
+"serviceName": "Database-Cluster",
+"errorDetails": "Connection Timeout"
 }
-🛠️ Tech Stack
-Frontend: HTML5, CSS3, Vanilla JavaScript (Fetch API)
 
-Backend: Node.js, Express.js
+---
 
-Storage: Local memory-based state management (Server-side)
+### 3. Fetch Dashboard
 
-📂 Project Structure
-Plaintext
+- **Endpoint:** `GET /dashboard`
+- **Description:** Returns the current list of all incidents.
+- **Response Status:** `200 OK`
 
-├── server.js          # Express server with incident & policy logic
-├── index.html         # Dashboard UI and client-side logic
-├── package.json       # Project dependencies and scripts
+---
+
+### 4. Update Status (Ack / Resolve)
+
+- **Endpoints:** `POST /ack` or `POST /resolve`
+- **Description:** Updates the status of an existing incident using its unique ID.
+- **Request Body:**
+
+{
+"id": "unique-incident-uuid"
+}
+
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** HTML5, CSS3, Vanilla JavaScript (Fetch API)
+- **Backend:** Node.js, Express.js
+- **Storage:** In-memory server-side state
+
+---
+
+## 📂 Project Structure
+
+├── server.js # Express server with incident & policy logic
+├── index.html # Dashboard UI and client-side logic
+├── package.json # Project dependencies and scripts
+
 🛠️ Installation & Setup
+
 Clone the repository
-
-Bash
-
 git clone [https://github.com/beyondinfinity9988/Lenskart-B1.2.git](https://github.com/beyondinfinity9988/Lenskart-B1.2.git)
 
 Install dependencies
