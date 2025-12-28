@@ -80,8 +80,11 @@ A real-time Incident Management System for DevOps workflows. It allows administr
 Clone the repository
 git clone [https://github.com/beyondinfinity9988/Lenskart-B1.2.git](https://github.com/beyondinfinity9988/Lenskart-B1.2.git)
 
+---
 Install dependencies
+
 npm install
 Run the server
 node server.js
+
 Access the Dashboard Open http://localhost:3000 in your browser
