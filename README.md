@@ -71,8 +71,8 @@ A real-time Incident Management System for DevOps workflows. It allows administr
 
 ## 📂 Project Structure
 
-├── server.js
-├── index.html 
+├── server.js 
+├── index.html  
 ├── package.json 
 
 ---
@@ -81,8 +81,7 @@ A real-time Incident Management System for DevOps workflows. It allows administr
 
 Clone the repository:
 
-git clone https://github.com/beyondinfinity9988/Lenskart-B1.2.git
-cd Lenskart-B1.2
+git clone https://github.com/beyondinfinity9988/Lenskart-B1.2.
 
 ---
 
