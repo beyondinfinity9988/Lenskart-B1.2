@@ -75,16 +75,29 @@ A real-time Incident Management System for DevOps workflows. It allows administr
 ├── index.html # Dashboard UI and client-side logic
 ├── package.json # Project dependencies and scripts
 
-🛠️ Installation & Setup
+---
 
-Clone the repository
-git clone [https://github.com/beyondinfinity9988/Lenskart-B1.2.git](https://github.com/beyondinfinity9988/Lenskart-B1.2.git)
+## 🔧 Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/beyondinfinity9988/Lenskart-B1.2.git
+cd Lenskart-B1.2
 
 ---
-Install dependencies
+
+Install dependencies:
 
 npm install
-Run the server
+
+---
+
+Run the server:
+
 node server.js
 
-Access the Dashboard Open http://localhost:3000 in your browser
+---
+
+Access the dashboard:
+
+- Open http://localhost:3000 in your browser.
