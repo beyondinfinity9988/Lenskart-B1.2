@@ -71,9 +71,9 @@ A real-time Incident Management System for DevOps workflows. It allows administr
 
 ## 📂 Project Structure
 
-├── server.js # Express server with incident & policy logic
-├── index.html # Dashboard UI and client-side logic
-├── package.json # Project dependencies and scripts
+├── server.js
+├── index.html 
+├── package.json 
 
 ---
 
